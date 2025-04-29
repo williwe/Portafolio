@@ -1,0 +1,236 @@
+/*----Header Menu----*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.1px 0;
+    background-color: rgba(255, 219, 216, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 1px 1px rgb(0, 0, 0);
+}
+
+/* Estilo del logo y menú en el header */
+.Encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Encabezado .Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Encabezado .Logo img {
+    width: 60px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.Encabezado nav {
+    display: flex;
+}
+
+.Encabezado .menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.Encabezado .menu-item {
+    margin-right: 30px;
+}
+
+.Encabezado .menu-item a {
+    font-size: 20px;
+    color: #070707;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.Encabezado .menu-item a:hover {
+    color: #282828;
+    border-bottom: 1px solid #282828;
+}
+
+/*----Fondo Cartelera----*/
+
+#Cartelera {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../IMG/Fondo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px; /* Espacio suficiente para que el contenido no quede debajo del header */
+}
+
+/* Contenido dentro de Cartelera */
+#Cartelera .Contenido-banner {
+    position: relative;
+    color: #FFA69E;
+    width: 50%;
+    text-align: left;
+    padding: 100px;
+    z-index: 10;
+}
+
+/* Estilo del texto en el contenido del banner */
+#Cartelera .Encabezado-banner h1 {
+    font-size: 4em;
+    line-height: 75px;
+}
+
+/* Estilo del párrafo en el contenido del banner */
+#Cartelera .Encabezado-banner p {
+    font-size: 1.2em;
+    line-height: 4em;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+/* Estilo de los enlaces de redes sociales */
+#Cartelera .social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+}
+
+#Cartelera .social-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Cartelera .social-links li {
+    margin-left: 20px;
+}
+
+#Cartelera .social-links a {
+    color: #fff;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+#Cartelera .social-links a:hover {
+    color: #FFA69E;
+}
+
+/*----Contenido dentro de Contacto----*/
+
+#Contacto {
+    background-color: #282828;
+    color: #FFA69E;
+    padding: 20px 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    font-size: 1em;
+}
+
+#Contacto .social-links ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#Contacto .social-links li {
+    margin-left: 20px;
+}
+
+#Contacto .social-links a {
+    color: #FFA69E;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+#Contacto .social-links a:hover {
+    color: #fff;
+}
+
+/*----Sección Sobre Mí----*/
+
+#Sobre-mi {
+    background-color: #FFFFFF;
+    color: #0D0D0D;
+    padding: 160px 40px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    min-height: 1200px;
+}
+
+.sobre-mi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 110px;
+    margin-top: 120px;
+}
+
+.skills {
+    flex: 1;
+    max-width: 35%;
+}
+
+.skill {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.skill p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #FFA69E;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Descripción */
+.descripcion {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 40px;
+}
+
+.descripcion h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.descripcion p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}

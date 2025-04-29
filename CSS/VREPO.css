@@ -1,0 +1,68 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* El cuerpo */
+body {
+    font-family: sans-serif;
+}
+
+/* Hacer que las imágenes se adapten */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+nav li {
+    margin: 5px;
+}
+
+/* Adaptar la navegación en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*----Social Media Icons in Cartelera----*/
+@media (max-width: 768px) {
+    #Cartelera .social-links ul {
+        flex-direction: column;  /* Coloca los íconos en una columna */
+        align-items: center;  /* Centra los íconos */
+    }
+
+    #Cartelera .social-links li {
+        padding-right: 0;  /* Elimina el padding horizontal en pantallas pequeñas */
+        margin-bottom: 10px;  /* Da un margen inferior para separarlos */
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Encabezado .menu-list {
+        flex-direction: column;  /* En pantallas pequeñas, el menú se coloca en columna */
+        align-items: center;  /* Centra los elementos del menú */
+    }
+
+    .Encabezado .menu-item {
+        margin-right: 0;  /* Elimina el margen derecho */
+        margin-bottom: 15px;  /* Agrega espacio entre los elementos del menú */
+    }
+
+    .Encabezado .Logo img {
+        width: 60px;  /* Ajusta el tamaño del logo en pantallas pequeñas */
+    }
+}
