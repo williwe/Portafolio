@@ -9,6 +9,8 @@
     <!-- Incluir CSS-->
     <link rel="stylesheet" href="CSS/VREPO.css">
     <link rel="stylesheet" href="CSS/STYLE.CSS">
+    <!-- Script js -->
+    <script src="JS/SCRIPT.JS"></script>
     <!-- Incluir Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -48,7 +50,18 @@
                 <h1>Hola, yo soy <span class="colored">Willinton Londoño</span></h1>
                 <p>Analista de sistemas. Me encanta ofrecer trabajos de calidad.</p>
                 <div class="btn-wrap">
-                    <button type="button" class="btn btn-light">Ponte en contacto</button>
+
+
+                    <button type="button" class="btn btn-light" onclick="abrirPopup()">Repocitorio</button>
+
+                    <div? class="popup-overlay" id="popup"style="display: none;">
+                        <div class="popup-card">
+                            <img src=" " alt="Foto de perfil">
+                            <h3>Willinton Londoño Quitian</h3>
+                            <p>Analista de sistemas<br>Repositorio</p>
+                            <button type="button" class="btn btn-outline-light" onclick="cerrarPopup()">X</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,15 +108,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Derecha: Descripción -->
             <div class="descripcion">
                 <h2>Sobre mí</h2>
-                <p>Soy un profesional con sólidos conocimientos en el manejo de Excel avanzado, automatización y análisis de datos utilizando Python, mantenimiento y optimización de equipos de cómputo, y creación de reportes visuales con Power BI para facilitar la toma de decisiones empresariales.</p>
+                <p>Soy un profesional con sólidos conocimientos en el manejo de Excel avanzado, automatización y
+                    análisis de datos utilizando Python, mantenimiento y optimización de equipos de cómputo, y creación
+                    de reportes visuales con Power BI para facilitar la toma de decisiones empresariales.</p>
             </div>
         </div>
     </section>
-    
+
 
     <footer id="Contacto">
         <div class="footer-container">
