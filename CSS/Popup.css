@@ -61,11 +61,13 @@ body {
 }
 
 .popup-card img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #f0f0f0; /* Opcional: para visualizar mejor los bordes si hay espacio */
 }
+
 
 .popup-card {
     /* tamaño ancho que ya tienes */
