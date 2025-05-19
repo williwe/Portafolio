@@ -131,7 +131,7 @@ header {
 /*----Contenido dentro de Contacto----*/
 
 #Contacto {
-    background-color: #282828;
+    background-color: #000;
     color: #FFA69E;
     padding: 20px 40px;
 }
@@ -233,4 +233,64 @@ header {
 .descripcion p {
     font-size: 1.1em;
     line-height: 1.8;
+}
+
+/* popup */
+
+.popup-overlay {
+    display: none; /* se activa con JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-frame {
+    width: 600px;       /* Ajusta el ancho a un tamaño de tarjeta */
+    height: 300px;      /* Ajusta la altura */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+
+
+/* servicios */
+
+#Servicios {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: linear-gradient(135deg, #0D0D0D, #282828);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Servicios h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+#Servicios h4 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+#Servicios p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+#Servicios i {
+  transition: transform 0.3s ease;
+}
+
+#Servicios i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }

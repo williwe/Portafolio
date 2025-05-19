@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup en iframe</title>
+    <link rel="stylesheet" href="../CSS/POPUP.css">
+    <!-- Bootstrap icons (opcional, si usas íconos de GitHub) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="popup-card">
+        <div class="text-content">
+            <h2>Willinton Londoño Quitian</h2>
+            <p>Analista de sistemas<br>Repositorio</p>
+            <ul>
+                <li><a href="https://github.com/" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+            </ul>
+            <button type="button" class="close-btn" onclick="window.parent.cerrarPopup()">Cerrar</button>
+        </div>
+        <img src="ruta/a/tu/foto.jpg" alt="Foto de perfil" class="img-fluid">
+    </div>
+
+</body>
+
+</html>

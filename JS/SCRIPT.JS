@@ -1,7 +1,7 @@
 function abrirPopup() {
-    document.getElementById('popup').style.display = 'flex';
+    document.getElementById('popup-overlay').style.display = 'flex';
 }
 
 function cerrarPopup() {
-    document.getElementById('popup').style.display = 'none';
+    document.getElementById('popup-overlay').style.display = 'none';
 }

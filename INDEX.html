@@ -43,41 +43,31 @@
 
 
     <section id="Cartelera">
-        <!-- <img src="IMG/Fondo.png" alt="post" class="Banner-imagen"> -->
         <div class="Contenido-banner">
-
             <div class="Encabezado-banner">
                 <h1>Hola, yo soy <span class="colored">Willinton Londoño</span></h1>
                 <p>Analista de sistemas. Me encanta ofrecer trabajos de calidad.</p>
+
                 <div class="btn-wrap">
-
-
-                    <button type="button" class="btn btn-light" onclick="abrirPopup()">Repocitorio</button>
-
-                    <div? class="popup-overlay" id="popup"style="display: none;">
-                        <div class="popup-card">
-                            <img src=" " alt="Foto de perfil">
-                            <h3>Willinton Londoño Quitian</h3>
-                            <p>Analista de sistemas<br>Repositorio</p>
-                            <button type="button" class="btn btn-outline-light" onclick="cerrarPopup()">X</button>
-                        </div>
-                    </div>
+                    <button type="button" class="btn btn-light" onclick="abrirPopup()">Repositorio</button>
                 </div>
             </div>
         </div>
 
+        <!-- Popup fuera de btn-wrap y contenido para que cubra pantalla completa -->
+        <div id="popup-overlay" class="popup-overlay">
+            <iframe id="popup-frame" src="VISTA/VPOPUP.HTML" class="popup-frame"></iframe>
+        </div>
 
         <div class="social-links">
             <ul>
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F%3Ffilter%3Dall"
-                        target="_blank"><i class="bi bi-linkedin"></i></a></li>
                 <li><a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a></li>
             </ul>
         </div>
+    </section>
 
-    </section><!--Cartelera-->
 
     <section id="Sobre mi">
         <div class="sobre-mi-container">
@@ -118,6 +108,41 @@
             </div>
         </div>
     </section>
+
+    <section id="Servicios" class="py-6 bg-primary text-white">
+        <div class="container">
+            <h2 class="mb-5 text-center display-4 fw-bold">Servicios</h2>
+            <div class="row text-center g-5">
+
+                <div class="col-md-3">
+                    <i class="bi bi-file-earmark-excel" style="font-size: 4rem; color: #28a745;"></i>
+                    <h4 class="mt-4">Optimización de Excel</h4>
+                    <p class="fs-5">Mejoramos tus hojas de cálculo para que trabajes más rápido y con menos errores.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <i class="bi bi-code-slash" style="font-size: 4rem; color: #ffc107;"></i>
+                    <h4 class="mt-4">Automatización con Python</h4>
+                    <p class="fs-5">Generación y automatización de procesos para Excel usando Python, facilitando tareas
+                        repetitivas.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <i class="bi bi-laptop" style="font-size: 4rem; color: #17a2b8;"></i>
+                    <h4 class="mt-4">Desarrollo Web</h4>
+                    <p class="fs-5">Creación y mantenimiento de sitios web modernos, responsivos y atractivos.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <i class="bi bi-gear" style="font-size: 4rem; color: #dc3545;"></i>
+                    <h4 class="mt-4">Mantenimiento Técnico</h4>
+                    <p class="fs-5">Soporte y mantenimiento para optimizar el rendimiento de tus equipos y sistemas.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
 
     <footer id="Contacto">

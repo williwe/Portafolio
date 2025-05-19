@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 500px;
+    max-width: 90%;
+    gap: 20px;
+}
+
+.popup-card .text-content {
+    flex: 1;
+}
+
+.popup-card h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.popup-card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.popup-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.popup-card li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.popup-card .close-btn {
+    margin-top: 15px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popup-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.popup-card {
+    /* tamaño ancho que ya tienes */
+    width: 600px;
+    max-width: 90%;
+    height: 260px; /* altura fija rectangular */
+    /* mantiene tu diseño flex para alinear la imagen y el texto */
+}
+
+
+
+.popup-card ul {
+    list-style: none; /* quita el punto */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.popup-card li {
+    margin: 0;
+}
+
+.popup-card li a {
+    color: black; /* color negro */
+    font-size: 20px; /* tamaño grande */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* espacio entre icono y texto, si hay */
+}
+
+.popup-card li a i {
+    font-size: 40px; /* icono más grande que el texto */
+}
+
